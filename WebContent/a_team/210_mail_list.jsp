@@ -56,9 +56,6 @@
 				</ul>
 			</menu>
 		</div>
-		<div class="nano-pane">
-			<div class="nano-slider" style="height: 433px; transform: translate(0px, 0px);"></div>
-		</div>
 	</aside>
 	<main id="main">
 		<div class="overlay"></div>
