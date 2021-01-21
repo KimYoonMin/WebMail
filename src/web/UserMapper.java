@@ -7,7 +7,10 @@ import org.apache.ibatis.annotations.*;
 @Mapper
 public interface UserMapper {
 	@Select( "SELECT * FROM user WHERE id = #{id}" )	
-	User selectOne(int id);
+	User selectOne_Id(int id);
+	
+	@Select( "SELECT * FROM user WHERE name = #{name}")
+	User selectOne_Name(String name);
 	
 	@Select( "SELECT * FROM user WHERE name=#{name} AND passwd = #{passwd}" )
 	User logIn( User user );
