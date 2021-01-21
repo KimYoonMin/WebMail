@@ -37,9 +37,11 @@
          ${query}
       </sql:query>
 
+<c:if test="${ not empty user }">
+	<c:redirect url="/a_team/210_mail_list.jsp"/>
+</c:if>
 
-
-<c:if test="${empty result.rows }">
+<c:if test="${ empty result.rows }">
 	<div class="wrapper fadeInDown">
 	  <div id="formContent">
 	    <!-- Tabs Titles -->
@@ -56,10 +58,13 @@
 </c:if>
 
 <c:if test="${ not empty result.rows }">
-<%session.setAttribute("name", (String)pageContext.getAttribute("name")); %>
-<jsp:include page="/a_team/210_mail_list.jsp">
-	<jsp:param name="name" value="${name}"/>
-</jsp:include>
+<%	
+	String name= (String)pageContext.getAttribute("name");
+	User user = new User();
+	user.setName(name);
+	session.setAttribute("user" , user);
+%>
+<c:redirect url="/a_team/210_mail_list.jsp"/>
 </c:if>
 
   </body>
