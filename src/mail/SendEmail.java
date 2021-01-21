@@ -10,18 +10,39 @@ import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 import web.SysProps;
 
+@Getter
+@Setter
+@ToString
 public class SendEmail {
 	
-	public static void main(String[] args) throws Exception {
+	private String from_email;
+	private String to_email;
+	private String subject;
+	private String message;
+	
+	public SendEmail() {}
+	
+	public SendEmail(String from_email, String to_email, String subject, String message) throws Exception {
+		this.from_email = from_email;
+		this.to_email = to_email;
+		this.subject = subject;
+		this.message = message;
+		this.send();
+	}
+	
+	public void send() throws Exception {
 		System.out.println("Sending email now ...");
 
 		// Recipient's email ID needs to be mentioned.
-		String to = "rorbs12@gmail.com";
+		String to = to_email;
 
 		// Sender's email ID needs to be mentioned
-		String from = "terabuilder@gmail.com";
+		String from = from_email;
 		
 		SysProps sysProps = new SysProps();
 		
@@ -45,22 +66,30 @@ public class SendEmail {
 		});
 
 		// Create a default MimeMessage object.
-		Message message = new MimeMessage(session);
+		Message mimeMessage = new MimeMessage(session);
 		
 		// Set From: header field of the header.
-		message.setFrom(new InternetAddress(from));
+		mimeMessage.setFrom(new InternetAddress(from));
 		// Set To: header field of the header.
-		message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(to));
+		mimeMessage.setRecipients(Message.RecipientType.TO, InternetAddress.parse(to));
 		// Set Subject: header field
-		message.setSubject("Testing Subject : " + new Date());
+		mimeMessage.setSubject(subject);
 		// Now set the actual message
-		String text = "";
-		text += "Hello, this is sample for to check send email using JavaMailAPI at " + new Date() + "." ; 
-		message.setText(text);
+		String text = message;
+		mimeMessage.setText(text);
 
 		// Send message
-		Transport.send(message);
+		Transport.send(mimeMessage);
 
 		System.out.println("Sent message successfully.");
 	}
+
+
+
+	
+
+
+
+
+	
 }
