@@ -93,6 +93,7 @@ public class SendEmail {
 
 			// Send message
 			Transport.send(mimeMessage);
+		// Recipient's email ID needs to be mentioned.
 
 			System.out.println("Sent message successfully.");
 			return "Send Message Success!!";
