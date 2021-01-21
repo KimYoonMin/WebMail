@@ -61,7 +61,7 @@
 		<div class="overlay"></div>
 		<header class="header">
 			<div class="search-box">
-				<input placeholder="검색 ..."><span class="icon glyphicon glyphicon-search"></span>
+				<a onclick="location.href='../a_team/310_mail_search.jsp'" style="cursor:pointer"><input placeholder="검색 ..." ><span class="icon glyphicon glyphicon-search"></span></a>
 			</div>
 			<h1 class="page-title">
 				<a class="sidebar-toggle-btn trigger-toggle-sidebar">
