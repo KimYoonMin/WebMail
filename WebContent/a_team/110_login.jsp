@@ -1,3 +1,4 @@
+<%@page import="org.apache.catalina.Session"%>
 <%@page import="web.User"%>
 <%@page import="web.UserMapper"%>
 <%@ page import="java.io.*, java.util.*, java.sql.*"%>
@@ -46,7 +47,7 @@
 	    <!-- Login Form -->
 	    <form id="loginForm" name="loginForm" method="post">
 	      <input type="text" id="name" class="fadeIn second" name="name" placeholder="login">
-	      <input type="text" id="passwd" class="fadeIn third" name="passwd" placeholder="password">
+	      <input type="password" id="passwd" class="fadeIn third" name="passwd" placeholder="password">
 	      <input type="button" class="fadeIn fourth" value="Log In" id="loginBtn" onclick="checkLogin()">
 	    </form>
 	    <!-- Remind Passowrd -->
@@ -55,6 +56,7 @@
 </c:if>
 
 <c:if test="${ not empty result.rows }">
+<%session.setAttribute("name", (String)pageContext.getAttribute("name")); %>
 <jsp:include page="/a_team/210_mail_list.jsp">
 	<jsp:param name="name" value="${name}"/>
 </jsp:include>
