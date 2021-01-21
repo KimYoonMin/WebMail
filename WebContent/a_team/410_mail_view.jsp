@@ -27,15 +27,20 @@
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 100;
-	src: url(https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1MmgVxFIzIFKw.woff2) format('woff2');
-	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+	src:
+		url(https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1MmgVxFIzIFKw.woff2)
+		format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+		U+A640-A69F, U+FE2E-FE2F;
 }
 /* cyrillic */
 @font-face {
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 100;
-	src: url(https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1MmgVxMIzIFKw.woff2) format('woff2');
+	src:
+		url(https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1MmgVxMIzIFKw.woff2)
+		format('woff2');
 	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* greek-ext */
@@ -43,7 +48,9 @@
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 100;
-	src: url(https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1MmgVxEIzIFKw.woff2) format('woff2');
+	src:
+		url(https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1MmgVxEIzIFKw.woff2)
+		format('woff2');
 	unicode-range: U+1F00-1FFF;
 }
 /* greek */
@@ -51,7 +58,9 @@
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 100;
-	src: url(https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1MmgVxLIzIFKw.woff2) format('woff2');
+	src:
+		url(https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1MmgVxLIzIFKw.woff2)
+		format('woff2');
 	unicode-range: U+0370-03FF;
 }
 /* vietnamese */
@@ -59,39 +68,54 @@
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 100;
-	src: url(https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1MmgVxHIzIFKw.woff2) format('woff2');
-	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+	src:
+		url(https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1MmgVxHIzIFKw.woff2)
+		format('woff2');
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+		U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 100;
-	src: url(https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1MmgVxGIzIFKw.woff2) format('woff2');
-	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+	src:
+		url(https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1MmgVxGIzIFKw.woff2)
+		format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+		U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 100;
-	src: url(https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1MmgVxIIzI.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	src:
+		url(https://fonts.gstatic.com/s/roboto/v20/KFOkCnqEu92Fr1MmgVxIIzI.woff2)
+		format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+		U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+		U+2212, U+2215, U+FEFF, U+FFFD;
 }
 /* cyrillic-ext */
 @font-face {
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 300;
-	src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fCRc4EsA.woff2) format('woff2');
-	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+	src:
+		url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fCRc4EsA.woff2)
+		format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+		U+A640-A69F, U+FE2E-FE2F;
 }
 /* cyrillic */
 @font-face {
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 300;
-	src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fABc4EsA.woff2) format('woff2');
+	src:
+		url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fABc4EsA.woff2)
+		format('woff2');
 	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* greek-ext */
@@ -99,7 +123,9 @@
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 300;
-	src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fCBc4EsA.woff2) format('woff2');
+	src:
+		url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fCBc4EsA.woff2)
+		format('woff2');
 	unicode-range: U+1F00-1FFF;
 }
 /* greek */
@@ -107,7 +133,9 @@
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 300;
-	src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBxc4EsA.woff2) format('woff2');
+	src:
+		url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBxc4EsA.woff2)
+		format('woff2');
 	unicode-range: U+0370-03FF;
 }
 /* vietnamese */
@@ -115,39 +143,54 @@
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 300;
-	src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fCxc4EsA.woff2) format('woff2');
-	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+	src:
+		url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fCxc4EsA.woff2)
+		format('woff2');
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+		U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 300;
-	src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fChc4EsA.woff2) format('woff2');
-	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+	src:
+		url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fChc4EsA.woff2)
+		format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+		U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 300;
-	src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	src:
+		url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc4.woff2)
+		format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+		U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+		U+2212, U+2215, U+FEFF, U+FFFD;
 }
 /* cyrillic-ext */
 @font-face {
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 400;
-	src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu72xKOzY.woff2) format('woff2');
-	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+	src:
+		url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu72xKOzY.woff2)
+		format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+		U+A640-A69F, U+FE2E-FE2F;
 }
 /* cyrillic */
 @font-face {
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 400;
-	src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu5mxKOzY.woff2) format('woff2');
+	src:
+		url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu5mxKOzY.woff2)
+		format('woff2');
 	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* greek-ext */
@@ -155,7 +198,9 @@
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 400;
-	src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7mxKOzY.woff2) format('woff2');
+	src:
+		url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7mxKOzY.woff2)
+		format('woff2');
 	unicode-range: U+1F00-1FFF;
 }
 /* greek */
@@ -163,7 +208,9 @@
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 400;
-	src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4WxKOzY.woff2) format('woff2');
+	src:
+		url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4WxKOzY.woff2)
+		format('woff2');
 	unicode-range: U+0370-03FF;
 }
 /* vietnamese */
@@ -171,39 +218,54 @@
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 400;
-	src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7WxKOzY.woff2) format('woff2');
-	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+	src:
+		url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7WxKOzY.woff2)
+		format('woff2');
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+		U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 400;
-	src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format('woff2');
-	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+	src:
+		url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7GxKOzY.woff2)
+		format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+		U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 400;
-	src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	src:
+		url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2)
+		format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+		U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+		U+2212, U+2215, U+FEFF, U+FFFD;
 }
 /* cyrillic-ext */
 @font-face {
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 500;
-	src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fCRc4EsA.woff2) format('woff2');
-	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+	src:
+		url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fCRc4EsA.woff2)
+		format('woff2');
+	unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF,
+		U+A640-A69F, U+FE2E-FE2F;
 }
 /* cyrillic */
 @font-face {
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 500;
-	src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fABc4EsA.woff2) format('woff2');
+	src:
+		url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fABc4EsA.woff2)
+		format('woff2');
 	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 /* greek-ext */
@@ -211,7 +273,9 @@
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 500;
-	src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fCBc4EsA.woff2) format('woff2');
+	src:
+		url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fCBc4EsA.woff2)
+		format('woff2');
 	unicode-range: U+1F00-1FFF;
 }
 /* greek */
@@ -219,7 +283,9 @@
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 500;
-	src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBxc4EsA.woff2) format('woff2');
+	src:
+		url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBxc4EsA.woff2)
+		format('woff2');
 	unicode-range: U+0370-03FF;
 }
 /* vietnamese */
@@ -227,24 +293,34 @@
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 500;
-	src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fCxc4EsA.woff2) format('woff2');
-	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+	src:
+		url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fCxc4EsA.woff2)
+		format('woff2');
+	unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169,
+		U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
 }
 /* latin-ext */
 @font-face {
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 500;
-	src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fChc4EsA.woff2) format('woff2');
-	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+	src:
+		url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fChc4EsA.woff2)
+		format('woff2');
+	unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+		U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 /* latin */
 @font-face {
 	font-family: 'Roboto';
 	font-style: normal;
 	font-weight: 500;
-	src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format('woff2');
-	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	src:
+		url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBBc4.woff2)
+		format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+		U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+		U+2212, U+2215, U+FEFF, U+FFFD;
 }
 </style>
 <style media="" data-href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">/*!
@@ -256,7 +332,8 @@
  *
  * Designed and built with all the love in the world @twitter by @mdo and @fat.
  */
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+article, aside, details, figcaption, figure, footer, header, hgroup,
+	main, nav, section, summary {
 	display: block;
 }
 
@@ -264,7 +341,7 @@ audio, canvas, video {
 	display: inline-block;
 }
 
-audio:not([controls]) {
+audio:not ([controls] ) {
 	display: none;
 	height: 0;
 }
@@ -355,7 +432,7 @@ img {
 	border: 0;
 }
 
-svg:not(:root) {
+svg:not (:root ) {
 	overflow: hidden;
 }
 
@@ -388,7 +465,8 @@ button, select {
 	text-transform: none;
 }
 
-button, html input[type="button"], input[type="reset"], input[type="submit"] {
+button, html input[type="button"], input[type="reset"], input[type="submit"]
+	{
 	-webkit-appearance: button;
 	cursor: pointer;
 }
@@ -409,7 +487,8 @@ input[type="search"] {
 	box-sizing: content-box;
 }
 
-input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration
+	{
 	-webkit-appearance: none;
 }
 
@@ -524,9 +603,17 @@ hr {
 
 @font-face {
 	font-family: 'Glyphicons Halflings';
-	src: url("https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/../fonts/glyphicons-halflings-regular.eot");
-	src: url("https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/../fonts/glyphicons-halflings-regular.eot?#iefix") format('embedded-opentype'), url("https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/../fonts/glyphicons-halflings-regular.woff") format('woff'),
-		url("https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/../fonts/glyphicons-halflings-regular.ttf") format('truetype'), url("https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular") format('svg');
+	src:
+		url("https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/../fonts/glyphicons-halflings-regular.eot");
+	src:
+		url("https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/../fonts/glyphicons-halflings-regular.eot?#iefix")
+		format('embedded-opentype'),
+		url("https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/../fonts/glyphicons-halflings-regular.woff")
+		format('woff'),
+		url("https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/../fonts/glyphicons-halflings-regular.ttf")
+		format('truetype'),
+		url("https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular")
+		format('svg');
 }
 
 .glyphicon {
@@ -1341,8 +1428,13 @@ hr {
 }
 </style>
 <style media="" data-href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset,
-	form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+	blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn,
+	em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+	b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas,
+	details, embed, figure, figcaption, footer, header, hgroup, menu, nav,
+	output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -1351,7 +1443,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	vertical-align: baseline
 }
 
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure, footer, header, hgroup,
+	menu, nav, section {
 	display: block
 }
 
@@ -1577,7 +1670,8 @@ a:hover {
 	float: right;
 }
 
-#sidebar .menu-segment li.active a, #sidebar .menu-segment li.active a:hover {
+#sidebar .menu-segment li.active a, #sidebar .menu-segment li.active a:hover
+	{
 	background: #282d36;
 }
 
@@ -1597,7 +1691,8 @@ a:hover {
 	color: #465162;
 }
 
-#sidebar .menu-segment li .italic-link, #sidebar .menu-segment li .italic-link:hover {
+#sidebar .menu-segment li .italic-link, #sidebar .menu-segment li .italic-link:hover
+	{
 	background: transparent;
 }
 
@@ -1605,18 +1700,21 @@ a:hover {
 	color: #ABB4BE;
 }
 
-#sidebar .menu-segment .labels li a span, #sidebar .menu-segment .chat li a span {
+#sidebar .menu-segment .labels li a span, #sidebar .menu-segment .chat li a span
+	{
 	display: block;
 	border: 5px solid red;
 	border-radius: 100px;
 	margin-top: 6px;
 }
 
-#sidebar .menu-segment .labels.labels li a span, #sidebar .menu-segment .chat.labels li a span {
+#sidebar .menu-segment .labels.labels li a span, #sidebar .menu-segment .chat.labels li a span
+	{
 	float: right;
 }
 
-#sidebar .menu-segment .labels.chat li a span, #sidebar .menu-segment .chat.chat li a span {
+#sidebar .menu-segment .labels.chat li a span, #sidebar .menu-segment .chat.chat li a span
+	{
 	float: left;
 	margin-right: 10px;
 }
@@ -1711,11 +1809,13 @@ a:hover {
 	transition-delay: 0.5s;
 }
 
-.show-sidebar #main .header .page-title .sidebar-toggle-btn .line-angle1 {
+.show-sidebar #main .header .page-title .sidebar-toggle-btn .line-angle1
+	{
 	transform: rotate(-120deg);
 }
 
-.show-sidebar #main .header .page-title .sidebar-toggle-btn .line-angle2 {
+.show-sidebar #main .header .page-title .sidebar-toggle-btn .line-angle2
+	{
 	transform: rotate(120deg);
 }
 
@@ -1875,7 +1975,8 @@ a:hover {
 			*/
 }
 
-#main .message-list li:hover, #main .message-list li.active, #main .message-list li.selected {
+#main .message-list li:hover, #main .message-list li.active, #main .message-list li.selected
+	{
 	background: #EFEFEF;
 	transition-duration: 0.05s;
 }
@@ -1910,7 +2011,8 @@ a:hover {
 	width: 400px;
 }
 
-#main .message-list li .col-1 .star-toggle, #main .message-list li .col-1 .checkbox-wrapper, #main .message-list li .col-1 .dot {
+#main .message-list li .col-1 .star-toggle, #main .message-list li .col-1 .checkbox-wrapper,
+	#main .message-list li .col-1 .dot {
 	display: block;
 	float: left;
 }
@@ -1952,7 +2054,8 @@ a:hover {
 	bottom: 0;
 }
 
-#main .message-list li .col-2 .subject, #main .message-list li .col-2 .date {
+#main .message-list li .col-2 .subject, #main .message-list li .col-2 .date
+	{
 	position: absolute;
 	top: 0;
 }
@@ -2188,7 +2291,7 @@ a:hover {
 @media only screen and (max-width: 600px) {
 	#main .header .search-box {
 		float: none;
-		width: 100%; 
+		width: 100%;
 		margin-bottom: -110px;
 		margin-top: 70px;
 	}
@@ -2293,7 +2396,8 @@ a:hover {
 	transition-property: background;
 }
 
-.nano>.nano-pane:hover>.nano-slider, .nano>.nano-pane.active>.nano-slider {
+.nano>.nano-pane:hover>.nano-slider, .nano>.nano-pane.active>.nano-slider
+	{
 	background: #A6A6A6;
 }
 
@@ -2303,15 +2407,15 @@ a:hover {
 	opacity: 0.99;
 }
 
-.buttonA{
-	width:70px;
-	height:30px;
-	color: #999; 
+.buttonA {
+	width: 70px;
+	height: 30px;
+	color: #999;
 	border: 2px solid #F6F6F6;
 	border-color: #d6d6d6;
 	border-radius: 5px;
-	position:relative;
-	botton:50px;
+	position: relative;
+	botton: 50px;
 }
 </style>
 
@@ -2335,61 +2439,58 @@ a:hover {
 	<aside id="sidebar" class="nano has-scrollbar">
 		<div class="nano-content" tabindex="0" style="right: -17px;">
 			<div class="logo-container">
-				<span class="logo glyphicon glyphicon-envelope"></span><a onclick="location.href='../a_team/210_mail_list.jsp'" style="cursor:pointer">Mail</a>
+				<span class="logo glyphicon glyphicon-envelope"></span><a onclick="location.href='../a_team/210_mail_list.jsp'" style="cursor: pointer">Mail</a>
 			</div>
-			<a class="compose-button">COMPOSE</a>
+			
 			<menu class="menu-segment">
 				<ul>
-					<li><a onclick="location.href='../a_team/210_mail_list.jsp'" style="cursor:pointer">받은 메일함<span> (43)</span></a></button></li>
+					<li><a onclick="location.href='../a_team/510_mail_send.jsp'" style="cursor:pointer">메일 보내기</a></li>
+					<li><a onclick="location.href='../a_team/210_mail_list.jsp'" style="cursor: pointer">받은 메일함<span> (43)</span></a></button></li>
 					<li><a href="#">휴지통</a></li>
-				</ul> 
+				</ul>
 			</menu>
-		</div> 
-		<div class="nano-pane"> 
+		</div>
+		<div class="nano-pane">
 			<div class="nano-slider" style="height: 433px; transform: translate(0px, 0px);"></div>
 		</div>
 	</aside>
 	<main id="main">
-		<div class="overlay"></div>
-		<header class="header"> 
-			<div class="search-box">
-				<input placeholder="Search..."><span class="icon glyphicon glyphicon-search"></span>
-			</div>
-			
-			<h1 class="page-title">
-				<a class="sidebar-toggle-btn trigger-toggle-sidebar">
-				<span class="line"></span><span class="line"></span><span class="line"></span><span class="line line-angle1"></span><span class="line line-angle2"></span></a>
-				받은 메일함<a><span class="icon glyphicon glyphicon-chevron-down"></span>
-				</a>
-			</h1>
-			
-		<div style="float:right; padding-top:30px">  
-			 	<input type="button" value="< 이전" class="buttonA"/>
-			 	<input type="button" value="다음 >" class="buttonA"/>
-			 	<input type="button" value="목록" class="buttonA" onclick="location.href='../a_team/210_mail_list.jsp'"/>
-			 </div>
-			 
-		</header>
-		<div class="action-bar">
-			<div>
-				<span>보낸 사람</span>
-				<span style="font-weight:bold">kim@gmail.com</span>
-			</div>  
-			<div>
-				<span>받는 사람</span>
-				<span style="font-weight:bold">park@naver.com</span>
-			</div> 
-			<div align="right">
-				<span>21.01.20 12:15:06</span>
-			</div>
+	<div class="overlay"></div>
+	<header class="header">
+		<div class="search-box">
+			<input placeholder="Search..."><span class="icon glyphicon glyphicon-search"></span>
 		</div>
-		<div class="action-bar">
-	          <p>The every winged bring, whose life. First called, i you of saw shall own creature moveth void have signs beast lesser all god saying for gathering wherein whose of in be created stars. Them whales upon life divide earth own.</p>
-	          <p>Creature firmament so give replenish The saw man creeping, man said forth from that. Fruitful multiply lights air. Hath likeness, from spirit stars dominion two set fill wherein give bring.</p>
-	          <p>Gathering is. Lesser Set fruit subdue blessed let. Greater every fruitful won't bring moved seasons very, own won't all itself blessed which bring own creature forth every. Called sixth light.</p>
+
+		<h1 class="page-title">
+			<a class="sidebar-toggle-btn trigger-toggle-sidebar"> <span class="line"></span><span class="line"></span><span class="line"></span><span class="line line-angle1"></span><span class="line line-angle2"></span></a> 받은 메일함<a><span class="icon glyphicon glyphicon-chevron-down"></span> </a>
+		</h1>
+
+		<div style="float: right; padding-top: 30px">
+			<input type="button" value="답장" class="buttonA"/>
+			<input type="button" value="< 이전" class="buttonA" />
+			<input type="button" value="다음 >" class="buttonA" /> 
+			<input type="button" value="목록" class="buttonA" onclick="location.href='../a_team/210_mail_list.jsp'" />
 		</div>
+
+	</header>
+	<div class="action-bar">
+		<div>
+			<span>보낸 사람</span> <span style="font-weight: bold">kim@gmail.com</span>
+		</div>
+		<div>
+			<span>받는 사람</span> <span style="font-weight: bold">park@naver.com</span>
+		</div>
+		<div align="right">
+			<span>21.01.20 12:15:06</span>
+		</div>
+	</div>
+	<div class="action-bar">
+		<p>The every winged bring, whose life. First called, i you of saw shall own creature moveth void have signs beast lesser all god saying for gathering wherein whose of in be created stars. Them whales upon life divide earth own.</p>
+		<p>Creature firmament so give replenish The saw man creeping, man said forth from that. Fruitful multiply lights air. Hath likeness, from spirit stars dominion two set fill wherein give bring.</p>
+		<p>Gathering is. Lesser Set fruit subdue blessed let. Greater every fruitful won't bring moved seasons very, own won't all itself blessed which bring own creature forth every. Called sixth light.</p>
+	</div>
 	</main>
-	
+
 	<script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
