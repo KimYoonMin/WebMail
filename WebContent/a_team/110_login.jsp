@@ -17,7 +17,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-  	<link href="css/login_style_css.css" rel="stylesheet" type="text/css">
+  	<link href="css/110_login_style_css.css" rel="stylesheet" type="text/css">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -47,23 +47,17 @@
 	    <form id="loginForm" name="loginForm" method="post">
 	      <input type="text" id="name" class="fadeIn second" name="name" placeholder="login">
 	      <input type="text" id="passwd" class="fadeIn third" name="passwd" placeholder="password">
-	      <input type="button" class="fadeIn fourth" value="Log In" onclick="checkLogin()">
+	      <input type="button" class="fadeIn fourth" value="Log In" id="loginBtn" onclick="checkLogin()">
 	    </form>
 	    <!-- Remind Passowrd -->
-	    <div id="formFooter">
-	      <a class="underlineHover" href="#">Forgot Password?</a>
-	    </div>
-	
 	  </div>
 	</div>
 </c:if>
 
 <c:if test="${ not empty result.rows }">
-<!-- 
-<jsp:include page="/a_team/210_mail_inbox.jsp">
+<jsp:include page="/a_team/210_mail_list.jsp">
 	<jsp:param name="name" value="${name}"/>
 </jsp:include>
- -->
 </c:if>
 
   </body>

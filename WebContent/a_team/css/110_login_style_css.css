@@ -8,6 +8,9 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   height: 100vh;
+  background-image: url("../images/mainLetter.jpg");
+  background-size: cover;
+  background-position: center center;
 }
 
 a {
@@ -145,8 +148,12 @@ input[type=text]:placeholder {
   color: #cccccc;
 }
 
-
-
+#name{
+	margin-top:40px;
+}
+#loginBtn{
+	margin-top:20px;
+}
 /* ANIMATIONS */
 
 /* Simple CSS3 Fade-in-down Animation */
