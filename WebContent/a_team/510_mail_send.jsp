@@ -89,9 +89,7 @@
 	String from_email = (String)pageContext.getAttribute("from_email");
 	String to_email = (String)pageContext.getAttribute("to_email");
 	String subject = (String)pageContext.getAttribute("subject");
-	//subject = URLEncoder.encode(subject, "utf-8");
 	String message = (String)pageContext.getAttribute("message");
-	//message = URLEncoder.encode(message, "utf-8");
 	SendEmail sendEmail = new SendEmail(from_email,to_email,subject,message);
 	String result = sendEmail.send();
 	pageContext.setAttribute("result", result);
