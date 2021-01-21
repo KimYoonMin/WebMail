@@ -50,8 +50,9 @@
 			</div>
 			<menu class="menu-segment">
 				<ul>
-					<li class="active"><a href="#">받은 메일함<span> (개수)</span></a></li>
-					<li class="active"><a href="#">휴지통<span></span></a></li>
+					<li><a onclick="location.href='../a_team/510_mail_send.jsp'" style="cursor:pointer">메일 보내기</a></li>
+					<li><a onclick="location.href='../a_team/210_mail_list.jsp'" style="cursor:pointer">받은 메일함</a></li>
+					<li class="active"><a href="#">휴지통</a></li>
 				</ul>
 			</menu>
 		</div>
