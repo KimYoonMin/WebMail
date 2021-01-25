@@ -5,18 +5,50 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 
-<jsp:include page="./010_common.jsp" />
+<jsp:include page="./010_common.jsp" /> 
 
-<html lang="ko" class=" -webkit-">
+<c:set var="valid" value="${true}" />
+
+<c:if test="${ empty sessionScope.userid }">
+	<c:if test="${ not fn:contains( pageContext.request.servletPath, 'login.jsp' ) }">
+		<c:set var="valid" value="${false}" />
+		<c:redirect url="100_user_login.jsp">
+		</c:redirect>
+	</c:if>
+</c:if>
+
+&lt; &gt;
+
+<c:if test="${ valid }" >
+	<sql:query dataSource="${snapshot}" var="mailList">
+		SELECT 
+		( FLOOR( ( ROW_NUMBER() OVER(ORDER BY tm.RCVDATE) )/10 ) + 1 ) AS pno ,
+		ROW_NUMBER() OVER(ORDER BY tm.RCVDATE) rno , 
+		tu.userid, tm.mailid, tu.name, tm.title ,tms.simplecontent AS content ,
+		tm.RCVUSERID, tm.RCVDATE, tmr.rcvtype , 
+		'' AS z
+		FROM t_user tu
+		LEFT JOIN t_mail tm ON ( tu.userid = tm.rcvUserId AND tu.name='admin' )
+		LEFT JOIN t_mail_rcvinfo tmr ON tm.MAILID = tmr.mailid
+		LEFT JOIN t_mail_simplecontent tms ON tm.MAILID = tms.mailid
+		WHERE 1 = 1 
+		AND tm.mailid IS NOT NULL 
+		AND ( LENGTH( '' ) = 0 OR INSTR( tm.title, '' ) = 1 )
+		ORDER BY tm.RCVDATE 
+		LIMIT 20, 10
+	</sql:query>
+</c:if>
+
+<html lang="ko" >
 <head>
+<title>메일 목록 ${a} ${pageContext.request.servletPath} ${ sessionScope.userid }</title>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
 
 <link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
 <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
 <link rel="mask-icon" type="" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111">
-
-<title>반응형 웹메일</title>
 
 <link href="./rsc/style_01.css" rel="stylesheet" media="" data-href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500" >
 <link href="./rsc/style_02.css" rel="stylesheet" media="" data-href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
@@ -67,11 +99,10 @@
 		<div class="overlay"></div>
 		<header class="header">
 			<div class="search-box">
-				<input placeholder="검색 ..." type="text">
-				<!-- 
-				<input type="date" >
-				 -->
-				<span class="icon glyphicon glyphicon-search"></span>
+				<form >
+					<input placeholder="검색 ..." type="text" name="srch_title" value="${ param.srch_title }"/>
+					<span class="icon glyphicon glyphicon-search"></span>
+				</form>
 			</div>
 			<h1 class="page-title">
 				<a class="sidebar-toggle-btn trigger-toggle-sidebar">
@@ -92,23 +123,33 @@
 		<div id="main-nano-wrapper" class="nano has-scrollbar">
 			<div class="nano-content" tabindex="0" style="right: -17px;">
 				<ul class="message-list">
-					<li class="green-dot unread">
-						<div class="col col-1">
-							<span class="dot"></span>
-							<div class="checkbox-wrapper">
-								<input type="checkbox" id="chk2"> <label for="chk2" class="toggle"></label>
+					<!-- mail list -->
+					<c:forEach var="row" items="${mailList.rows}">
+			            <li class="green-dot unread"  title="${row.rno}" >
+							<div class="col col-1">
+								<span class="dot"></span>
+								<div class="checkbox-wrapper" title="${row.rno}" >
+									<input type="checkbox" id="chk2" > 
+									<label for="chk2" class="toggle"></label>
+								</div>
+								<p class="title" title="${ row.mailid }" > 
+									${ row.title } 
+								</p>
+								<div class="star-star-toggle glyphicon glyphicon-star-empty"></div>
 							</div>
-							<p class="title">Conceptboard</p>
-							<div class="star-star-toggle glyphicon glyphicon-star-empty"></div>
-						</div>
-						<div class="col col-2">
-							<div class="subject">
-								Please complete your Conceptboard signup &nbsp;–&nbsp; <span class="teaser">You recently created a Conceptboard account, but you have not yet confirmed your email. Your email is used for notifications about board activity, invites, as well as account
-									related tasks (like password retrieval).</span>
+							<div class="col col-2">
+								<div class="subject" style="text-overflow: ellipsis;" >
+									${ row.content }  
+								</div>
+								<div class="date" 
+									title="<fmt:formatDate pattern='yyyy-MM-dd HH:mm:ss' value='${row.rcvDate}' />"
+								> 
+									<fmt:formatDate pattern="yyyy-MM-dd" value="${row.rcvDate}" />
+								</div>
 							</div>
-							<div class="date">11:45 am</div>
-						</div>
-					</li>				
+						</li>
+			         </c:forEach>					
+					<!-- // mail list -->	
 				</ul>
 				
 				<a href="#" class="load-more-link">

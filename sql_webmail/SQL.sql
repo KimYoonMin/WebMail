@@ -1,0 +1,1 @@
+﻿SELECT * FROM t_mail, t_user WHERE mailid = userid ;
